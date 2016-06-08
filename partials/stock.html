@@ -4,193 +4,193 @@
 
 
 
-	<!-- Modal Dia -->
-	<div id="myModalDia" class="modal fade" role="dialog">
-		<div class="modal-dialog modal-lg">
-
-	  	<!-- Modal content-->
-	  	<div class="modal-content">
-	    	<div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Diagrammes</h4>
-	    	</div>
-	  		<div class="modal-body">
-
-	  			<div class="">
-					<div class="row">
-	  				<div class="col-xs-12" id="chart">
-
-	  					<div google-chart chart="chartObject" class="chart100" style="height: 440px;"></div>
-
-	  				</div>
-  				</div>
-				
-					<div class="row">
-	  				<div class="col-xs-12">
-
-	  					<div class="panel panel-default">
-							  <div class="panel-heading">
-							    <h3 class="panel-title">TOTAL</h3>
-							  </div>
-							  <table class="table table-hover table-responsive table-vcenter">
-									<tbody>
-										<tr>
-											<td>
-												<span><strong>Nombre de palettes</strong></span>
-						  				</td>
-						  				<td>
-												<span><strong>{{ nombreDePalettes }}</strong></span>
-						  				</td>
-						  			</tr>
-										<tr>
-											<td>
-												<span><strong>Volume</strong></span>
-						  				</td>
-						  				<td>
-												<span><strong>{{ total_G_m3() | number:3 }} m&#179;</strong></span>
-						  				</td>
-						  			</tr>
-						  			<tr>
-											<td>
-												<span><strong>Prix</strong></span>
-						  				</td>
-						  				<td>
-												<span><strong>{{ total_G_prix() | number:2 }} €</strong></span>
-						  				</td>
-						  			</tr>
-						  		</tbody>
-								</table>
-							</div>
-
-	  				</div>
-  				</div>
-				</div>
-
-	    	</div>
-	    	<div class="modal-footer">
-	      	<button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
-	    	</div>
-	  	</div>
-
-		</div>
-	</div>
-
-
-
-
-
-
-
-	<!-- Modal Pre -->
-	<div id="myModalPre" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-
-	  	<!-- Modal content-->
-	  	<div class="modal-content">
-	    	<div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" ng-click="newPrix()">&times;</button>
-	        <h4 class="modal-title">Préférences</h4>
-	    	</div>
-	  		<div class="modal-body">
-
-	  			<h4 class="text-center">Prix</h4>
-	  			<br>
-	  			<form class="form-horizontal">
-					  <div class="form-group">
-					    <label for="inputprix1" class="col-xs-5 control-label">1er choix gros grain 27</label>
-					    <div class="col-xs-7">
-					    	<div class="input-group">
-						      <input ng-model="objetPrix[0].p1GG27" type="text" class="form-control" id="inputprix1">
-						      <div class="input-group-addon">€</div>
-						    </div>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputprix2" class="col-xs-5 control-label">1er choix grain fin 27</label>
-					    <div class="col-xs-7">
-					    	<div class="input-group">
-						      <input ng-model="objetPrix[0].p1GF27" type="text" class="form-control" id="inputprix2">
-						      <div class="input-group-addon">€</div>
-						    </div>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputprix3" class="col-xs-5 control-label">1er choix grain fin 22</label>
-					    <div class="col-xs-7">
-					    	<div class="input-group">
-						      <input ng-model="objetPrix[0].p1GF22" type="text" class="form-control" id="inputprix3">
-						      <div class="input-group-addon">€</div>
-						    </div>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputprix4" class="col-xs-5 control-label">2e choix gros grain 27</label>
-					    <div class="col-xs-7">
-					    	<div class="input-group">
-						      <input ng-model="objetPrix[0].p2GG27" type="text" class="form-control" id="inputprix4">
-						      <div class="input-group-addon">€</div>
-						    </div>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputprix5" class="col-xs-5 control-label">2e choix grain fin 27</label>
-					    <div class="col-xs-7">
-					    	<div class="input-group">
-						      <input ng-model="objetPrix[0].p2GF27" type="text" class="form-control" id="inputprix5">
-						      <div class="input-group-addon">€</div>
-						    </div>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <label for="inputprix6" class="col-xs-5 control-label">2e choix grain fin 22</label>
-					    <div class="col-xs-7">
-					    	<div class="input-group">
-						      <input ng-model="objetPrix[0].p2GF22" type="text" class="form-control" id="inputprix6">
-						      <div class="input-group-addon">€</div>
-						    </div>
-					    </div>
-					  </div>
-					</form>
+  <!-- Modal Dia -->
+  <div id="myModalDia" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Diagrammes</h4>
+        </div>
+        <div class="modal-body">
+
+          <div class="">
+          <div class="row">
+            <div class="col-xs-12" id="chart">
+
+              <div google-chart chart="chartObject" class="chart100" style="height: 440px;"></div>
+
+            </div>
+          </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">TOTAL</h3>
+                </div>
+                <table class="table table-hover table-responsive table-vcenter">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span><strong>Nombre de palettes</strong></span>
+                      </td>
+                      <td>
+                        <span><strong>{{ nombreDePalettes }}</strong></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span><strong>Volume</strong></span>
+                      </td>
+                      <td>
+                        <span><strong>{{ total_G_m3() | number:3 }} m&#179;</strong></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span><strong>Prix</strong></span>
+                      </td>
+                      <td>
+                        <span><strong>{{ total_G_prix() | number:2 }} €</strong></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Retour</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Modal Pre -->
+  <div id="myModalPre" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" ng-click="newPrix()">&times;</button>
+          <h4 class="modal-title">Préférences</h4>
+        </div>
+        <div class="modal-body">
+
+          <h4 class="text-center">Prix</h4>
+          <br>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputprix1" class="col-xs-5 control-label">1er choix gros grain 27</label>
+              <div class="col-xs-7">
+                <div class="input-group">
+                  <input ng-model="objetPrix[0].p1GG27" type="text" class="form-control" id="inputprix1">
+                  <div class="input-group-addon">€</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputprix2" class="col-xs-5 control-label">1er choix grain fin 27</label>
+              <div class="col-xs-7">
+                <div class="input-group">
+                  <input ng-model="objetPrix[0].p1GF27" type="text" class="form-control" id="inputprix2">
+                  <div class="input-group-addon">€</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputprix3" class="col-xs-5 control-label">1er choix grain fin 22</label>
+              <div class="col-xs-7">
+                <div class="input-group">
+                  <input ng-model="objetPrix[0].p1GF22" type="text" class="form-control" id="inputprix3">
+                  <div class="input-group-addon">€</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputprix4" class="col-xs-5 control-label">2e choix gros grain 27</label>
+              <div class="col-xs-7">
+                <div class="input-group">
+                  <input ng-model="objetPrix[0].p2GG27" type="text" class="form-control" id="inputprix4">
+                  <div class="input-group-addon">€</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputprix5" class="col-xs-5 control-label">2e choix grain fin 27</label>
+              <div class="col-xs-7">
+                <div class="input-group">
+                  <input ng-model="objetPrix[0].p2GF27" type="text" class="form-control" id="inputprix5">
+                  <div class="input-group-addon">€</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputprix6" class="col-xs-5 control-label">2e choix grain fin 22</label>
+              <div class="col-xs-7">
+                <div class="input-group">
+                  <input ng-model="objetPrix[0].p2GF22" type="text" class="form-control" id="inputprix6">
+                  <div class="input-group-addon">€</div>
+                </div>
+              </div>
+            </div>
+          </form>
 
 
-	    	</div>
-	    	<div class="modal-footer">
-	      	<button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="newPrix()">Valider</button>
-	    	</div>
-	  	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="newPrix()">Valider</button>
+        </div>
+      </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
 
 
 
-
-
-
-	<!-- Modal Sup -->
-	<div id="myModalSup" class="modal fade" role="dialog">
-		<div class="modal-dialog">
-
-	  	<!-- Modal content-->
-	  	<div class="modal-content">
-	    	<div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Confirmation</h4>
-	    	</div>
-	  		<div class="modal-body">
+
+
+
+  <!-- Modal Sup -->
+  <div id="myModalSup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Confirmation</h4>
+        </div>
+        <div class="modal-body">
 
-	  			<p>Voulez-vous supprimer cette palette ?</p>
+          <p>Voulez-vous supprimer cette palette ?</p>
 
-	    	</div>
-	    	<div class="modal-footer">
-	      	<button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="removeUser()">Supprimer</button>
-	      	<button type="button" class="btn btn-primary" data-dismiss="modal">Annuler</button>
-	    	</div>
-	  	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="removeUser()">Supprimer</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Annuler</button>
+        </div>
+      </div>
 
-		</div>
-	</div>
+    </div>
+  </div>
 
 
 
@@ -198,257 +198,257 @@
 
 
 
-	<!-- Header -->
-	<header class="hidden-print navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="row">
-	  		<div class="col-xs-6">
+  <!-- Header -->
+  <header class="hidden-print navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
 
-					<h2>Stock douelles</h2>
+          <h2>Stock douelles</h2>
 
-				</div>
-				<div class="col-xs-6 text-right">
+        </div>
+        <div class="col-xs-6 text-right">
 
-					<br>
-					<br>
+          <br>
+          <br>
 
-					<div class="btn-group" role="group" aria-label="...">
+          <div class="btn-group" role="group" aria-label="...">
 
-						<button type="button" class="btn btn-default btn-icone" data-toggle="modal" data-target="#myModalDia" title="Diagramme"><i class="material-icons">insert_chart</i></button>
-						
-						<!-- Trigger the modal with a button -->
-						<button type="button" class="btn btn-default btn-icone" data-backdrop="static" data-toggle="modal" data-target="#myModalPre" title="Préférence"><i class="material-icons">settings</i></button>
+            <button type="button" class="btn btn-default btn-icone" data-toggle="modal" data-target="#myModalDia" title="Diagramme"><i class="material-icons">insert_chart</i></button>
+            
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-default btn-icone" data-backdrop="static" data-toggle="modal" data-target="#myModalPre" title="Préférence"><i class="material-icons">settings</i></button>
 
-					</div>
+          </div>
 
-					<button type="button" class="btn btn-primary btn-margin-left" ng-click="logout()">Déconnexion</button>	
+          <button type="button" class="btn btn-primary btn-margin-left" ng-click="logout()">Déconnexion</button>  
 
-				</div>
-			</div>
+        </div>
+      </div>
 
-			<br>
+      <br>
 
-			<ul class="nav nav-tabs" ng-init="rechercher.grain = 'grosgrain'; rechercher.qualite = '1'; rechercher.ep = '27'; idPrix.prix = objetPrix[0].p1GG27; idPrix.id = 0;">
+      <ul class="nav nav-tabs" ng-init="rechercher.grain = 'grosgrain'; rechercher.qualite = '1'; rechercher.ep = '27'; idPrix.prix = objetPrix[0].p1GG27; idPrix.id = 0;">
 
-		  	<li role="presentation" class="active"><a ng-click="rechercher.grain = 'grosgrain'; rechercher.qualite = '1'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p1GG27; idPrix.id = 0;" data-toggle="tab"><strong>1er GG 27 </strong><span class="badgeP">{{ calculNombrePalettes('grosgrain', '1', '27') }}</span></a></li>
+        <li role="presentation" class="active"><a ng-click="rechercher.grain = 'grosgrain'; rechercher.qualite = '1'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p1GG27; idPrix.id = 0;" data-toggle="tab"><strong>1er GG 27 </strong><span class="badgeP">{{ calculNombrePalettes('grosgrain', '1', '27') }}</span></a></li>
 
-		  	<li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '1'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p1GF27; idPrix.id = 1;" data-toggle="tab"><strong>1er GF 27 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '1', '27') }}</span></a></li>
+        <li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '1'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p1GF27; idPrix.id = 1;" data-toggle="tab"><strong>1er GF 27 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '1', '27') }}</span></a></li>
 
-		  	<li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '1'; rechercher.ep = '22'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p1GF22; idPrix.id = 2;" data-toggle="tab"><strong>1er GF 22 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '1', '22') }}</span></a></li>
+        <li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '1'; rechercher.ep = '22'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p1GF22; idPrix.id = 2;" data-toggle="tab"><strong>1er GF 22 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '1', '22') }}</span></a></li>
 
-		  	<li role="presentation"><a ng-click="rechercher.grain = 'grosgrain'; rechercher.qualite = '2'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p2GG27; idPrix.id = 3;" data-toggle="tab"><strong>2e GG 27 </strong><span class="badgeP">{{ calculNombrePalettes('grosgrain', '2', '27') }}</span></a></li>
+        <li role="presentation"><a ng-click="rechercher.grain = 'grosgrain'; rechercher.qualite = '2'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p2GG27; idPrix.id = 3;" data-toggle="tab"><strong>2e GG 27 </strong><span class="badgeP">{{ calculNombrePalettes('grosgrain', '2', '27') }}</span></a></li>
 
-		  	<li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '2'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p2GF27; idPrix.id = 4;" data-toggle="tab"><strong>2e GF 27 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '2', '27') }}</span></a></li>
+        <li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '2'; rechercher.ep = '27'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p2GF27; idPrix.id = 4;" data-toggle="tab"><strong>2e GF 27 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '2', '27') }}</span></a></li>
 
-		  	<li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '2'; rechercher.ep = '22'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p2GF22; idPrix.id = 5;" data-toggle="tab"><strong>2e GF 22 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '2', '22') }}</span></a></li>
+        <li role="presentation"><a ng-click="rechercher.grain = 'grainfin'; rechercher.qualite = '2'; rechercher.ep = '22'; rechercher.$ = ''; idPrix.prix = objetPrix[0].p2GF22; idPrix.id = 5;" data-toggle="tab"><strong>2e GF 22 </strong><span class="badgeP">{{ calculNombrePalettes('grainfin', '2', '22') }}</span></a></li>
 
-			</ul>
-		</div>
-	</header>
+      </ul>
+    </div>
+  </header>
 
 
-	<div class="visible-print">
-		<div class="container">
-			<div class="row">
-	  		<div class="col-xs-12">
-					<h2>Stock douelles</h2>
-					<div ng-if="rechercher.qualite == '1'">
-						<div ng-if="rechercher.grain == 'grosgrain'">
-							<h4>{{ rechercher.qualite }}er choix gros grain {{ rechercher.ep }}</h4>
-						</div>
-						<div ng-if="rechercher.grain == 'grainfin'">
-							<h4>{{ rechercher.qualite }}er choix grain fin {{ rechercher.ep }}</h4>
-						</div>
-					</div>
-					<div ng-if="rechercher.qualite == '2'">
-						<div ng-if="rechercher.grain == 'grosgrain'">
-							<h4>{{ rechercher.qualite }}e choix gros grain {{ rechercher.ep }}</h4>
-						</div>
-						<div ng-if="rechercher.grain == 'grainfin'">
-							<h4>{{ rechercher.qualite }}e choix grain fin {{ rechercher.ep }}</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-	<!-- Content -->
-	<div class="container">
-		<br>
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="body-content">
-					<div class="hidden-print form-group ">
-						<div class="input-group">
-							<span class="input-group-addon"><i class="material-icons">search</i></span>
-							<input type="text" class="form-control input-rechercher" placeholder="rechercher" ng-model="rechercher.$">
-						</div>
-					</div>
-
-					<br>
-
-					<table class="table table-hover table-condensed table-responsive table-vcenter">
-					<thead>
-						<tr>
-							<th style="width:8%" ng-click="order('numero')">Numéro<span class="sortorder" ng-show="predicate === 'numero'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:8%" ng-click="order('longueur')">Longueur<span class="sortorder" ng-show="predicate === 'longueur'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:8%" ng-click="order('couches')">Couches<span class="sortorder" ng-show="predicate === 'couches'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:8%" ng-click="order('ml')">ml<span class="sortorder" ng-show="predicate === 'ml'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:8%" ng-click="order('m3')">m&#179;<span class="sortorder" ng-show="predicate === 'm3'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:12%" ng-click="order('date')">Date<span class="sortorder" ng-show="predicate === 'date'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:19%" ng-click="order('provenance')">Provenance<span class="sortorder" ng-show="predicate === 'provenance'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:8%" ng-click="order('lot')">Lot<span class="sortorder" ng-show="predicate === 'lot'" ng-class="{reverse:reverse}"></span></th>
-
-							<th style="width:11%" ng-click="order('prix')">Prix<span class="sortorder" ng-show="predicate === 'prix'" ng-class="{reverse:reverse}"></span></th>
-
-							<th class="hidden-print" style="width:10%">Editer</th>
-						</tr>
-					</thead>
-					<tbody ng-repeat="p in stock | filter:rechercher | orderBy:predicate:reverse">
-					<tr>
-						<td>
-							<span editable-number="p.numero" e-name="numero" e-form="rowform" e-ng-keypress="keypress($event, rowform)" onbeforesave="checkNumero($data, p.numero)" e-required>
-	  						<strong>{{ p.numero || 'vide' }}</strong>
-	  					</span>
-	  				</td>
-
-						<td>
-							<span editable-text="p.longueur" e-name="longueur" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
-								{{ p.longueur || 'vide' }}
-							</span>
-						</td>
-
-						<td>
-							<span editable-text="p.couches" e-name="couches" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
-								{{ p.couches || 'vide' }}
-							</span>
-						</td>
-
-						<td>
-							<span editable-text="p.ml" e-name="ml" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
-								{{ p.ml || 'vide' }}
-							</span>
-						</td>
-
-						<td>
-							<span>
-								{{ calculM3(p) }}
-							</span>
-						</td>
-
-						<td>
-							<span editable-text="p.date" e-name="date" e-form="rowform" e-placeholder="jj/mm/yyyy" e-ng-keypress="keypress($event, rowform)" onbeforesave="checkDate($data, p, rowform)" e-required>
-								{{ p.date || 'vide' }}
-							</span>
-						</td>
-
-						<td>
-							<span editable-text="p.provenance" e-name="provenance" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
-								{{ p.provenance || 'vide' }}
-							</span>
-						</td>
-
-						<td>
-							<span editable-text="p.lot" e-name="lot" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
-								{{ p.lot || 'vide' }}
-							</span>
-						</td>
-
-						<td>
-							<span>
-								{{ calculPrix(p) | number:2 }}
-							</span>
-						</td>
-
-						<td class="hidden-print" style="white-space: nowrap">
-			        <!-- form -->
-			        <form editable-form name="rowform" onaftersave="saveUser($data, p.$id)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted.numero == p.numero">
-								<button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary btn-icone" title="Valider">
-									<i class="material-icons">check</i>
-								</button>
-	            	<button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel(); cancel(p);" class="btn btn-default btn-icone" title="Annuler">
-	            		<i class="material-icons">clear</i>
-	            	</button>
-			        </form>
-			        <div class="buttons" ng-show="!rowform.$visible">
-	          		<button class="btn btn-primary btn-icone" ng-click="rowform.$show(); editeUser();" title="Editer">
-	          			<i class="material-icons">mode_edit</i>
-	          		</button>
-		          	<button class="btn btn-danger btn-icone" ng-click="removeUser(p)" data-toggle="modal" data-target="#myModalSup" title="Supprimer">
-		          		<i class="material-icons">delete_forever</i>
-		          	</button>
-			        </div>  
-				    </td>
-					</tr>
-					</tbody>
-					<tfoot>
-				    <tr>
-			        <th></th>
-			        <th></th>
-			        <th></th>
-			        <th></th>
-			        <th>{{ totalM3() | number:3 }}</th>
-			        <th></th>
-			        <th></th>
-			        <th></th>
-			        <th>{{ totalPrix() | number:2 }}</th>
-			        <th class="hidden-print"></th>
-				    </tr>
-					</tfoot>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-	<!-- Footer -->
-	<footer class="hidden-print navbar navbar-default navbar-fixed-bottom">
-		<div class="container">
-			<div class="row">
-			  <div class="col-xs-6">
-			  	<br>
-					<div class="text-left">
-						<p>Dernier numéro : <span class="badge">{{ dernierNum[0].numero }}</span></p>
-					</div>
-					<br>
-					<br>
-				</div>
-				<div class="col-xs-6">
-			  	<br>
-					<div class="text-right">
-
-						<div class="btn-group" role="group" aria-label="...">
-							<button id="undoRemove" class="btn btn-default btn-icone" ng-click="rechercher.$ = ''; undoRemove();" disabled title="Annuler"><i class="material-icons">undo</i></button>
-							<button class="btn btn-default btn-icone" ng-click="rechercher.$ = ''; addUser();" title="Ajouter"><i class="material-icons">add</i></button>
-						</div>
-
-					</div>
-					<br>
-					<br>
-				</div>
-			</div>
-		</div>
-	</footer>
+  <div class="visible-print">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Stock douelles</h2>
+          <div ng-if="rechercher.qualite == '1'">
+            <div ng-if="rechercher.grain == 'grosgrain'">
+              <h4>{{ rechercher.qualite }}er choix gros grain {{ rechercher.ep }}</h4>
+            </div>
+            <div ng-if="rechercher.grain == 'grainfin'">
+              <h4>{{ rechercher.qualite }}er choix grain fin {{ rechercher.ep }}</h4>
+            </div>
+          </div>
+          <div ng-if="rechercher.qualite == '2'">
+            <div ng-if="rechercher.grain == 'grosgrain'">
+              <h4>{{ rechercher.qualite }}e choix gros grain {{ rechercher.ep }}</h4>
+            </div>
+            <div ng-if="rechercher.grain == 'grainfin'">
+              <h4>{{ rechercher.qualite }}e choix grain fin {{ rechercher.ep }}</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Content -->
+  <div class="container">
+    <br>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="body-content">
+          <div class="hidden-print form-group ">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="material-icons">search</i></span>
+              <input type="text" class="form-control input-rechercher" placeholder="rechercher" ng-model="rechercher.$">
+            </div>
+          </div>
+
+          <br>
+
+          <table class="table table-hover table-condensed table-responsive table-vcenter">
+          <thead>
+            <tr>
+              <th style="width:8%" ng-click="order('numero')">Numéro<span class="sortorder" ng-show="predicate === 'numero'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:8%" ng-click="order('longueur')">Longueur<span class="sortorder" ng-show="predicate === 'longueur'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:8%" ng-click="order('couches')">Couches<span class="sortorder" ng-show="predicate === 'couches'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:8%" ng-click="order('ml')">ml<span class="sortorder" ng-show="predicate === 'ml'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:8%" ng-click="order('m3')">m&#179;<span class="sortorder" ng-show="predicate === 'm3'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:12%" ng-click="order('date')">Date<span class="sortorder" ng-show="predicate === 'date'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:19%" ng-click="order('provenance')">Provenance<span class="sortorder" ng-show="predicate === 'provenance'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:8%" ng-click="order('lot')">Lot<span class="sortorder" ng-show="predicate === 'lot'" ng-class="{reverse:reverse}"></span></th>
+
+              <th style="width:11%" ng-click="order('prix')">Prix<span class="sortorder" ng-show="predicate === 'prix'" ng-class="{reverse:reverse}"></span></th>
+
+              <th class="hidden-print" style="width:10%">Editer</th>
+            </tr>
+          </thead>
+          <tbody ng-repeat="p in stock | filter:rechercher | orderBy:predicate:reverse">
+          <tr>
+            <td>
+              <span editable-number="p.numero" e-name="numero" e-form="rowform" e-ng-keypress="keypress($event, rowform)" onbeforesave="checkNumero($data, p.numero)" e-required>
+                <strong>{{ p.numero || 'vide' }}</strong>
+              </span>
+            </td>
+
+            <td>
+              <span editable-text="p.longueur" e-name="longueur" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
+                {{ p.longueur || 'vide' }}
+              </span>
+            </td>
+
+            <td>
+              <span editable-text="p.couches" e-name="couches" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
+                {{ p.couches || 'vide' }}
+              </span>
+            </td>
+
+            <td>
+              <span editable-text="p.ml" e-name="ml" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
+                {{ p.ml || 'vide' }}
+              </span>
+            </td>
+
+            <td>
+              <span>
+                {{ calculM3(p) }}
+              </span>
+            </td>
+
+            <td>
+              <span editable-text="p.date" e-name="date" e-form="rowform" e-placeholder="jj/mm/yyyy" e-ng-keypress="keypress($event, rowform)" onbeforesave="checkDate($data, p, rowform)" e-required>
+                {{ p.date || 'vide' }}
+              </span>
+            </td>
+
+            <td>
+              <span editable-text="p.provenance" e-name="provenance" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
+                {{ p.provenance || 'vide' }}
+              </span>
+            </td>
+
+            <td>
+              <span editable-text="p.lot" e-name="lot" e-form="rowform" e-ng-keypress="keypress($event, rowform)" e-required>
+                {{ p.lot || 'vide' }}
+              </span>
+            </td>
+
+            <td>
+              <span>
+                {{ calculPrix(p) | number:2 }}
+              </span>
+            </td>
+
+            <td class="hidden-print" style="white-space: nowrap">
+              <!-- form -->
+              <form editable-form name="rowform" onaftersave="saveUser($data, p.$id)" ng-show="rowform.$visible" class="form-buttons form-inline" shown="inserted.numero == p.numero">
+                <button type="submit" ng-disabled="rowform.$waiting" class="btn btn-primary btn-icone" title="Valider">
+                  <i class="material-icons">check</i>
+                </button>
+                <button type="button" ng-disabled="rowform.$waiting" ng-click="rowform.$cancel(); cancel(p);" class="btn btn-default btn-icone" title="Annuler">
+                  <i class="material-icons">clear</i>
+                </button>
+              </form>
+              <div class="buttons" ng-show="!rowform.$visible">
+                <button class="btn btn-primary btn-icone" ng-click="rowform.$show(); editeUser();" title="Editer">
+                  <i class="material-icons">mode_edit</i>
+                </button>
+                <button class="btn btn-danger btn-icone" ng-click="removeUser(p)" data-toggle="modal" data-target="#myModalSup" title="Supprimer">
+                  <i class="material-icons">delete_forever</i>
+                </button>
+              </div>  
+            </td>
+          </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>{{ totalM3() | number:3 }}</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th>{{ totalPrix() | number:2 }}</th>
+              <th class="hidden-print"></th>
+            </tr>
+          </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="hidden-print navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6">
+          <br>
+          <div class="text-left">
+            <p>Dernier numéro : <span class="badge">{{ dernierNum[0].numero }}</span></p>
+          </div>
+          <br>
+          <br>
+        </div>
+        <div class="col-xs-6">
+          <br>
+          <div class="text-right">
+
+            <div class="btn-group" role="group" aria-label="...">
+              <button id="undoRemove" class="btn btn-default btn-icone" ng-click="rechercher.$ = ''; undoRemove();" disabled title="Annuler"><i class="material-icons">undo</i></button>
+              <button class="btn btn-default btn-icone" ng-click="rechercher.$ = ''; addUser();" title="Ajouter"><i class="material-icons">add</i></button>
+            </div>
+
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
