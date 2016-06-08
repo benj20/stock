@@ -1,113 +1,113 @@
 .partial-stock {
-	padding-top: 160px;
-	padding-bottom: 150px; 
+    padding-top: 160px;
+    padding-bottom: 150px; 
 }
 
 @media print {
 
-	.partial-stock {
-		padding-top: 8pt;
-		padding-bottom: 8pt;
+    .partial-stock {
+        padding-top: 8pt;
+        padding-bottom: 8pt;
 
-		font-size: 13pt;
-	}
+        font-size: 13pt;
+    }
 
-	h2 {
-		font-size: 29pt;
-	}
+    h2 {
+        font-size: 29pt;
+    }
 
-	h4 {
-		font-size: 14pt;
-	}
+    h4 {
+        font-size: 14pt;
+    }
 }
 
 
 
 @media (min-width: 768px) {
-  	.chart100 {
-    	width: 540px;
-  	}
+    .chart100 {
+        width: 540px;
+    }
 }
 
 @media (min-width: 992px) {
-  	.chart100 {
-    	width: 840px;
-  	}
+    .chart100 {
+        width: 840px;
+    }
 }
-	
+    
 .badgeP {
-	display: inline-block;
-	min-width: 8px;
-	padding: 2px 5px;
-	font-size: 11px;
-	font-weight: bold;
-	line-height: 1;
-	color: #fff;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	background-color: #999;
-	border-radius: 8px;
+    display: inline-block;
+    min-width: 8px;
+    padding: 2px 5px;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #999;
+    border-radius: 8px;
 }
 
 .btn:focus {
-	outline: none;
+    outline: none;
 } 
 
 .btn-default:focus {
-	background-color: #fff;
-	border-color: #ccc;
+    background-color: #fff;
+    border-color: #ccc;
 }
 
 .btn-default:focus:hover {
-	background-color: #e6e6e6;
-	border-color: #8c8c8c;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c;
 }
 
 .btn-danger:focus {
-	background-color: #d9534f;
-	border-color: #d43f3a;
+    background-color: #d9534f;
+    border-color: #d43f3a;
 }
 
 .btn-danger:focus:hover {
-	background-color: #c9302c;
-	border-color: #761c19;
+    background-color: #c9302c;
+    border-color: #761c19;
 }
 
 .btn-margin-left {
-	margin-left: 22px;
+    margin-left: 22px;
 }
 
 
 
 .navbar-default {
-	background-color: #eee;
-	border: none;
+    background-color: #eee;
+    border: none;
 }
 
 .sortorder:after {
-	content: '\25b2';
+    content: '\25b2';
 }
 
 .sortorder.reverse:after {
-	content: '\25bc';
+    content: '\25bc';
 }
 
 .nav-tabs li:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 thead th:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .btn-icone {
-	padding: 6px 10px;
-	font-size: 0;
+    padding: 6px 10px;
+    font-size: 0;
 }
 
 .input-rechercher {
-	padding: 20px 12px;
+    padding: 20px 12px;
 }
 
 .table-vcenter td {
